@@ -152,6 +152,13 @@ a
         width: 82%
         max-width: 18rem
         text-align: center
+    &.is-bottom 
+        @include flex-center
+        flex-direction: column
+        padding-bottom: 4rem
+
+        .input
+            width: auto
 
 .header-form
     text-align: center
@@ -191,12 +198,22 @@ a
 
 
 .btn
+    cursor: pointer
     padding: 0.3rem 1.5rem;
     font-size: 1.2rem
     &.is-white
         background: transparent
         border: 2px solid white
         color: white
+    &.is-link
+        border-color: transparent
+        background: transparent
+        &:hover,
+        &:focus
+            text-decoration: underline
+        &.is-invert
+            color: white
+
 
 
 .buttom-caption
@@ -224,6 +241,58 @@ a
 
 .about-content
     font-size: 1.45rem
+
+
+#best 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/middle-bg.png)
+    background-size: cover;
+    background-position: center
+    margin-top: 10rem
+    .container
+        @include flex-between
+        
+.best-form
+    width: 31rem
+    background: $red
+    align-self: stretch
+    @include flex-between
+    flex-direction: column 
+
+    position: relative
+    bottom: 6.5rem
+    .best-form-title
+        font-family: $bold_font
+        font-size: 7rem;
+        color: #fff;
+        line-height: 0.8;
+        margin-top: 0.5rem;
+
+.best-content
+    flex-grow: 1
+    @include flex-center
+    padding: 6.5rem 0
+    .best-info
+        padding: 1rem
+        min-width: 32rem
+        background: #dcdcdc
+        color: #636363
+        font-size: 2rem
+        .title
+            line-height: 1
+            font-family: $bold_font
+            font-size: 4rem
+            margin: 0
+            color: $dark
+        .area
+            margin: 1rem 0 0 0 
+            font-size: 3.5rem
+        .send
+            text-align: center
+            margin-top: 16rem
+
+    .best-img
+        max-height: 48rem
+
 
 @import "media" // Всегда в конце
 
