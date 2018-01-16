@@ -1,28 +1,133 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 2600px)
+    html
+        font-size: 14px
 
+
+@media only screen and (max-width : 2000px)
+    html
+        font-size: 12px
+
+@media only screen and (max-width : 1600px)
+    html
+        font-size: 10px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+    html
+        font-size: 8px
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+    html
+        font-size: 7px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
 
+    .best-form
+         align-self: center;
+
+    #best .container
+        flex-direction: column
+
+    .section.is-header
+        .container
+            .in
+                //justify-content: center
+                flex-direction: column
+                .main-screen
+                    order: -1
+
+                .sidebar
+                    align-self: center
+
+                    .nav
+                        display: none
+
+    .header-form
+        padding: 2.3rem 0;
+
+    
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+    /**/
+    #about
+        .row
+            flex-direction: column 
+
+            .col.is-gallery
+                order: -1
 
 
+    .offer.is-down
+        margin-top: 3rem !important
+    #contact .row .column
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+
+    .best-content
+        flex-direction: column
+
+        .best-img
+            width: 100%
+            max-height: none
+
+        .best-info
+            width: 100%
+            text-align: center
+
+            .send
+                margin-top: auto
+
+
+    .section
+        .section-title
+            width: 70%
+
+
+    .main-caption .title
+        font-size: 6rem
+
+    .main-caption .subtitle
+        font-size: 1.8rem  
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
 
+    .container
+        padding: 0 2rem
+    
+    .contact
+        .form
+            flex-direction: column
+            .right
+                margin-left: auto
+    .section
+        .section-title
+            width: 95%
+    .main-caption 
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        .title
+          font-size: 5rem
+
+          .subtitle
+              font-size: 1.5rem
+    .row
+        flex-direction: column
+    .offer
+        width: 29rem
+        margin-left: auto
+        margin-right: auto
+
+    .best-content
+        padding-top: 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
